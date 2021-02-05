@@ -1,4 +1,5 @@
 plugins {
+    id "com.github.johnrengelman.shadow" version "6.1.0"
     id 'java'
 }
 
@@ -13,6 +14,6 @@ repositories {
 
 dependencies {
     compile group: 'org.bouncycastle', name: 'bcprov-jdk15on', version: '1.68'
+    compile group: 'commons-io', name: 'commons-io', version: '2.8.0'
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
-
