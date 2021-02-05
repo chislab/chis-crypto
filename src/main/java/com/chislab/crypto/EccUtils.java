@@ -25,7 +25,7 @@ public class EccUtils {
 
         // generate key pair
         final KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("EC", BouncyCastleProvider.PROVIDER_NAME);
-        keyPairGenerator.initialize(new ECGenParameterSpec("secp256r1"));
+        keyPairGenerator.initialize(new ECGenParameterSpec("secp256k1"));
         final KeyPair keyPair = keyPairGenerator.generateKeyPair();
 
         return keyPair;
